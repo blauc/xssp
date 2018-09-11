@@ -171,7 +171,7 @@ class MResidue
 
   double        Phi() const;
   double        Psi() const;
-  std::tr1::tuple<double,char>
+  std::tuple<double,char>
             Alpha() const;
   double        Kappa() const;
   double        TCO() const;
@@ -451,4 +451,3 @@ void MProtein::GetSequences(OutputIterator outSequences) const
     *outSequences++ = seq;
   }
 }
-
